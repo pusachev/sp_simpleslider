@@ -1,0 +1,13 @@
+<?php
+/** @var $this SP_SimpleSLider_Block_List */
+$collection = $this->getSliderImages();
+?>
+<?php if($collection->count()): ?>
+<ul>
+    <?php foreach ($collection as $item): ?>
+        <li>
+            <img src="<?php echo $item->getImage(); ?>" alt="<?php echo $item->getAlt(); ?>" />
+        </li>
+    <?php endforeach; ?>
+</ul>
+<?php endif; ?>

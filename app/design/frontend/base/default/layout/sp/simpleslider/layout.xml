@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="root">
+            <block type="core/text_list" name="newreference" as="newreference" translate="label">
+                <label>New Reference</label>
+            </block>
+        </reference>
+    </default>
+    <cms_index_index>
+        <reference name="newreference">
+            <block type="sp_simpleslider/list" name="test.list" template="sp/simpleslider/list.phtml" />
+        </reference>
+    </cms_index_index>
+</layout>
